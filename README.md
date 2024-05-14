@@ -1,21 +1,21 @@
-# Meu Portfólio
+# Meu Portfólio 🚀
 
 Bem-vindo ao meu site pessoal, um espaço onde compartilho meu portfólio e currículo. Desenvolvi este projeto utilizando HTML, CSS e JS, seguindo a abordagem de mobile first para garantir uma ótima experiência em todos os dispositivos.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 💻
 
 - HTML
 - CSS
 - JavaScript
 
-## Funcionalidades Principais
+## Funcionalidades Principais ℹ️
 
-- Apresentação do meu portfólio de projetos;
-- Apresentação das minha experiências.
-- Apresentação das minhas skills.
+- Apresentação do meu portfólio de projetos
+- Apresentação das minha experiências
+- Apresentação das minhas skills
 - Design responsivo para dispositivos móveis
 
-## Como Contribuir
+## Como Contribuir 🤝
 
 Sinta-se à vontade para contribuir com sugestões, correções ou novos recursos. Basta seguir estes passos:
 
@@ -25,6 +25,6 @@ Sinta-se à vontade para contribuir com sugestões, correções ou novos recurso
 4. Faça push para a branch (`git push origin minha-contribuicao`)
 5. Abra um Pull Request
 
-## Autor
+## Autor 👨‍💻
 
 Nathan Maria da Silva
