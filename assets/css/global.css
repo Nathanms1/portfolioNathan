@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #0a262b;
     color: #fff;
 }
 
@@ -37,7 +37,7 @@ a:hover {
     display: inline-block;
     position: fixed;
     width: 120vw;
-    height: 100vh;
+    height: 80vh;
     top: 0;
     left: 0;
     z-index: -1;
@@ -51,7 +51,7 @@ a:hover {
     display: inline-block;
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     bottom: 0;
     right: 0;
     z-index: -1;
