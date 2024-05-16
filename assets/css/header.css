@@ -6,13 +6,15 @@
 }
 
 .linkedin-link,
-.youtube-link {
+.youtube-link, 
+.github-link {
     position: absolute;
     top: 0.5rem;
 }
 
 .linkedin-link img,
-.youtube-link img {
+.youtube-link img,
+.github-link img {
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -23,6 +25,10 @@
 
 .youtube-link {
     right: 0.5rem; 
+}
+
+.github-link {
+    right: 6.5rem; 
 }
 
 .header::before {
