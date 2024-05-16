@@ -119,4 +119,38 @@
     .header .information{
         grid-area: information;
     }
+
+    .linkedin-link img,
+    .youtube-link img,
+    .github-link img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header .photo{
+        width: 160px;
+        height: 160px;
+        margin-top: 50px;
+    }
+
+    .linkedin-link img,
+    .youtube-link img,
+    .github-link img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .linkedin-link {
+        right: 3.5rem; /* Reduzindo o espaçamento do LinkedIn */
+    }
+
+    .youtube-link {
+        right: 0.5rem; /* Reduzindo o espaçamento do YouTube */
+    }
+
+    .github-link {
+        right: 6.5rem; /* Reduzindo o espaçamento do GitHub */
+    }
 }
