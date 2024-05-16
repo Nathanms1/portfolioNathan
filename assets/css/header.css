@@ -5,17 +5,15 @@
     position: relative;
 }
 
-.header::after {
-    content: '';
-    display: inline-block;
+.linkedin-link {
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('/assets/img/icons/header.svg') ;
+}
+
+.linkedin-link img {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .header::before {
