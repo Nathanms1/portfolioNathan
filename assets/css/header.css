@@ -5,15 +5,24 @@
     position: relative;
 }
 
-.linkedin-link {
+.linkedin-link,
+.youtube-link {
     position: absolute;
     top: 0.5rem;
-    right: 1rem;
 }
 
-.linkedin-link img {
+.linkedin-link img,
+.youtube-link img {
     width: 2.5rem;
     height: 2.5rem;
+}
+
+.linkedin-link {
+    right: 3.5rem; 
+}
+
+.youtube-link {
+    right: 0.5rem; 
 }
 
 .header::before {
