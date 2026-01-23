@@ -4,25 +4,111 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 2rem;
 }
 
 .experience li {
-    margin-bottom: 1rem;
+    border-left: 3px solid #4a90e2;
+    padding-left: 1.5rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+}
+
+.experience li::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #4a90e2;
+}
+
+.experience li .title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    padding: 4px;
+    border-radius: 4px;
+    flex-shrink: 0;
 }
 
 .experience li .period {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: #ffffff;
 }
 
 .experience li .period::before {
-    content: "";
+    content: "📅";
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
     margin-right: .5rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('/assets/img/icons/period.svg');
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stacks, .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stacks .label, .projects .label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.stacks span:not(.label) {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.projects ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.projects li {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+.projects li::before {
+    display: none;
 }
