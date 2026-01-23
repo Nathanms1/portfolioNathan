@@ -22,26 +22,28 @@
 .skills .soft ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    gap: 1rem;
 }
 
 .skills .soft ul li {
-    margin-left: 2.1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 4px;
 }
 
 @media only screen and (min-width: 768px){
     .skills {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        gap: 2rem;
     }
     
     .skills .soft ul {
-        justify-content: space-between;
         margin-right: 3rem;
     }
 }
