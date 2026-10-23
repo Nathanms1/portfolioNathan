@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.skills .hard ul{
+.skills .hard ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -12,9 +12,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 0.5rem;
 }
 
-.skills .hard li img{
+.skills .hard li img {
     max-width: 50px;
     margin: 0 .5rem;
 }
@@ -22,21 +23,22 @@
 .skills .soft ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    gap: 1rem;
+    list-style: none;
+    gap: 0.75rem;
 }
 
 .skills .soft ul li {
     padding: 0.5rem 1rem;
-    background-color: rgba(255,255,255, 0.1);
+    background-color: var(--surface-pill);
     border-radius: 4px;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .skills {
         display: grid;
         grid-template-columns: 1fr 2fr;

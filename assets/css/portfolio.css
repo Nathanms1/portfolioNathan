@@ -21,14 +21,13 @@
     align-items: center;
     font-size: 1.25rem;
     font-weight: 700;
-    margin: 0;
-    margin-bottom: .5rem;
+    margin: 0 0 .5rem 0;
 }
 
 .portfolio li .title.cristal::before, 
 .portfolio li .title.carro::before,
 .portfolio li .title.github::before, 
-.portfolio li .title.jogo::before{
+.portfolio li .title.jogo::before {
     content: "";
     display: inline-block;
     width: 1rem;
@@ -36,21 +35,21 @@
     margin-right: .5rem;
     background-repeat: no-repeat;
     background-size: contain;
+    flex-shrink: 0;
 }
 
 .portfolio li .title.cristal::before {
-    background-image: url('/assets/img/icons/cristal.svg');
+    background-image: url('../img/icons/cristal.svg');
 }
 
 .portfolio li .title.github::before {
-    background-image: url('/assets/img/icons/github.svg');
+    background-image: url('../img/icons/github.svg');
 }
 
-
 .portfolio li .title.carro::before {
-    background-image: url('/assets/img/icons/carro.svg');
+    background-image: url('../img/icons/carro.svg');
 }
  
 .portfolio li .title.jogo::before {
-    background-image: url('/assets/img/icons/jogo.svg');
+    background-image: url('../img/icons/jogo.svg');
 }

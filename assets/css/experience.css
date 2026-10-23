@@ -7,15 +7,13 @@
     gap: 2rem;
 }
 
-.experience li {
-    border-left: 3px solid #4a90e2;
-    padding-left: 1.5rem;
+.experience > li {
+    border-left: 3px solid var(--color-timeline);
+    padding: 0 0 0.5rem 1.5rem;
     position: relative;
-    padding-top: 0;
-    padding-bottom: 0.5rem;
 }
 
-.experience li::before {
+.experience > li::before {
     content: "";
     position: absolute;
     left: -8px;
@@ -23,14 +21,14 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #4a90e2;
+    background-color: var(--color-timeline);
 }
 
-.experience li .title {
+.experience > li .title {
     margin: 0 0 0.5rem 0;
     font-size: 1.1rem;
     font-weight: 700;
-    color: #333;
+    color: var(--color-text-dark);
 }
 
 .company-header {
@@ -44,29 +42,26 @@
     width: 32px;
     height: 32px;
     object-fit: contain;
-    background-color: #f5f5f5;
+    background-color: var(--surface-logo);
     padding: 4px;
     border-radius: 4px;
     flex-shrink: 0;
 }
 
-.experience li .period {
+.experience > li .period {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 0 1rem 0;
     font-size: 0.9rem;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
-.experience li .period::before {
+.experience > li .period::before {
     content: "📅";
     display: inline-block;
     margin-right: .5rem;
     font-size: 1rem;
-    width: auto;
-    height: auto;
-    background: none;
 }
 
 .experience-details {
@@ -83,12 +78,12 @@
 
 .stacks .label, .projects .label {
     font-weight: 600;
-    color: #333;
+    color: var(--color-text-dark);
     font-size: 0.95rem;
 }
 
 .stacks span:not(.label) {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 0.95rem;
     line-height: 1.4;
 }
@@ -100,15 +95,8 @@
 }
 
 .projects li {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 0.4rem;
-    border: none;
-    padding: 0;
-    position: relative;
-}
-
-.projects li::before {
-    display: none;
 }

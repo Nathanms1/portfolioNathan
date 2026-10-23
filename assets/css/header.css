@@ -15,8 +15,8 @@
 .linkedin-link img,
 .youtube-link img,
 .github-link img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .linkedin-link {
@@ -41,19 +41,20 @@
     height: 2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/img/icons/cross.svg') ;
+    background-image: url('../img/icons/cross.svg');
 }
 
 .header .photo {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
+    margin-top: 50px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .header .title {
-    font-family: 'Neue Machina';
+    font-family: 'Neue Machina', sans-serif;
     text-align: center;
-    
 }
 
 .information {
@@ -79,78 +80,47 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: .5rem;
+    flex-shrink: 0;
 }
 
 .information .job::before {
-    background-image: url('/assets/img/icons/job.svg');
+    background-image: url('../img/icons/job.svg');
 }
 
 .information .location::before {
-    background-image: url('/assets/img/icons/location.svg');
+    background-image: url('../img/icons/location.svg');
 }
 
 .information .email::before {
-    background-image: url('/assets/img/icons/email.svg');
+    background-image: url('../img/icons/email.svg');
 }
 
 .information .phone::before {
-    background-image: url('/assets/img/icons/phone.svg');
+    background-image: url('../img/icons/phone.svg');
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .header {
         display: grid;
         grid-template-areas: 
-        "photo title"
-        "photo information";
+            "photo title"
+            "photo information";
     }
 
-    .header .photo{
+    .header .photo {
+        width: 200px;
+        height: 200px;
         grid-area: photo;
         margin: 0 auto;
     }
 
-    .header .title{
+    .header .title {
         grid-area: title;
         text-align: start;
         max-width: 220px;
     }
 
-    .header .information{
+    .header .information {
         grid-area: information;
-    }
-
-    .linkedin-link img,
-    .youtube-link img,
-    .github-link img {
-        width: 2rem;
-        height: 2rem;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .header .photo{
-        width: 160px;
-        height: 160px;
-        margin-top: 50px;
-    }
-
-    .linkedin-link img,
-    .youtube-link img,
-    .github-link img {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .linkedin-link {
-        right: 3.5rem; /* Reduzindo o espaçamento do LinkedIn */
-    }
-
-    .youtube-link {
-        right: 0.5rem; /* Reduzindo o espaçamento do YouTube */
-    }
-
-    .github-link {
-        right: 6.5rem; /* Reduzindo o espaçamento do GitHub */
     }
 }

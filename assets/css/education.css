@@ -7,15 +7,13 @@
     gap: 2rem;
 }
 
-.education li {
-    border-left: 3px solid #4a90e2;
-    padding-left: 1.5rem;
+.education > li {
+    border-left: 3px solid var(--color-timeline);
+    padding: 0 0 0.5rem 1.5rem;
     position: relative;
-    padding-top: 0;
-    padding-bottom: 0.5rem;
 }
 
-.education li::before {
+.education > li::before {
     content: "";
     position: absolute;
     left: -8px;
@@ -23,14 +21,14 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #4a90e2;
+    background-color: var(--color-timeline);
 }
 
-.education li .title {
+.education > li .title {
     margin: 0 0 0.5rem 0;
     font-size: 1.1rem;
     font-weight: 700;
-    color: #333;
+    color: var(--color-text-dark);
 }
 
 .institution-header {
@@ -44,37 +42,34 @@
     width: 32px;
     height: 32px;
     object-fit: contain;
-    background-color: #f5f5f5;
+    background-color: var(--surface-logo);
     padding: 4px;
     border-radius: 4px;
     flex-shrink: 0;
 }
 
-.education li .degree {
+.education > li .degree {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 0 0.5rem 0;
     font-size: 0.95rem;
-    color: #333;
+    color: var(--color-text-dark);
     font-weight: 600;
 }
 
-.education li .period {
+.education > li .period {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0;
     font-size: 0.9rem;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
-.education li .period::before {
+.education > li .period::before {
     content: "📅";
     display: inline-block;
     margin-right: .5rem;
     font-size: 1rem;
-    width: auto;
-    height: auto;
-    background: none;
 }

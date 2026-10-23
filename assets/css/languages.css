@@ -6,19 +6,18 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 0.5rem 1rem;
 }
 
 .languages li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 1rem;
     font-weight: 700;
 }
 
 .languages li.pt::before, 
-.languages li.en::before
-{
+.languages li.en::before {
     content: "";
     display: inline-block;
     width: 1rem;
@@ -26,11 +25,13 @@
     margin-right: .5rem;
     background-repeat: no-repeat;
     background-size: contain;
+    flex-shrink: 0;
 }
+
 .languages li.pt::before {
-    background-image: url('/assets/img/icons/pt-br.svg');
+    background-image: url('../img/icons/pt-br.svg');
 }
 
 .languages li.en::before {
-    background-image: url('/assets/img/icons/en.svg');
+    background-image: url('../img/icons/en.svg');
 }
