@@ -1,6 +1,13 @@
 .skills {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skills h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.15rem;
+    color: var(--color-text-dark);
 }
 
 .skills .hard ul {
@@ -9,7 +16,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 0 1.25rem 0;
     padding: 0;
     list-style: none;
     gap: 0.5rem;
@@ -18,6 +25,33 @@
 .skills .hard li img {
     max-width: 50px;
     margin: 0 .5rem;
+}
+
+.skills-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.skill-group {
+    background-color: var(--surface-pill);
+    padding: 0.85rem 1rem;
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--color-timeline);
+}
+
+.skill-group h4 {
+    margin: 0 0 0.4rem 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
+.skill-group p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--color-white);
 }
 
 .skills .soft ul {
@@ -36,16 +70,12 @@
     padding: 0.5rem 1rem;
     background-color: var(--surface-pill);
     border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 @media only screen and (min-width: 768px) {
-    .skills {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-    }
-    
-    .skills .soft ul {
-        margin-right: 3rem;
+    .skills-categories {
+        grid-template-columns: 1fr 1fr;
     }
 }

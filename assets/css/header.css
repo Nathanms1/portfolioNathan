@@ -105,6 +105,7 @@
         grid-template-areas: 
             "photo title"
             "photo information";
+        column-gap: 2rem;
     }
 
     .header .photo {
